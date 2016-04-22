@@ -82,7 +82,7 @@ table {
     </div>
 </div>
 
-    <button class="btn btn-default btn-sm del_confirm" data-toggle="modal" data-target="#deleteModal" >削除</button>
+    <button class="btn btn-default del_confirm" data-toggle="modal" data-target="#deleteModal" >削除</button>
     {# 削除を確認するモーダル ダイアログ #}
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -101,4 +101,7 @@ table {
     </div>
   </div>
 </div>
+<br><br>
+   <a href="{% url 'cms:account_list' %}"  class="btn btn-success"><span>アカウント情報</span></a>
+
 {% endblock content %}

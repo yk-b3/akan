@@ -18,3 +18,12 @@ def user_edit(request, parameter_id=None):
 def user_del(request, parameter_id):
     """ユーザ情報の削除"""
     return HttpResponse('ユーザ情報の削除')
+
+
+def account_list(request):
+    """アカウント情報の一覧"""
+
+    return render(request,
+                  'cms/account_list.html'
+                 )
+
